@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    transition:  /* Smooth page transition */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram gradient */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Header */
+.profile-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profile-details {
+    position: relative;
+    display: inline-block;
+    margin-top: -100px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* iOS-style hover effect */
+}
+
+/* Sections */
+.profile-section {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Sections (pop-up effect) */
+.profile-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Pop-up effect */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram gradient */
+    color: white;
+}
+
+/* Removed Keyframe Animations as Requested */.section-links {
+    display: flex;
+    flex-wrap: wrap;        /* Wraps items to the next line if space runs out */
+    justify-content: flex-start; /* Aligns links to the left */
+    gap: 30px;              /* Adds space between each link */
+    padding: 20px;
+}
+
+.section-links a {
+    text-decoration: none;  /* Removes underline */
+    font-size: 18px;        /* Adjusts text size */
+    color: white;           /* Keeps the color white */
+    padding: 15px 20px;     /* Adds padding for a clickable area */
+    background-color: rgba(0, 0, 0, 0.2); /* Adds a semi-transparent background */
+    border-radius: 5px;     /* Rounds the corners */
+}
+
+margin-bottom:15px.section-links a:hover {
+    background-color: rgba(0, 0, 0, 0.4); /* Darkens on hover */
+}.section-links {
+    width: 100%;   /* Makes sure the container uses full width */
+    text-align: left;  /* Aligns text to the left to avoid overlapping */
